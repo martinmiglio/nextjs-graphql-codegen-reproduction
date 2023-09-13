@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "graphql-codegen",
     "dev": "concurrently \"graphql-codegen -w\" \"next dev\"",
-    "build": "graphql-codegen && next build",
+    "build": "next build",
     "start": "next start",
     "compile": "graphql-codegen",
     "lint": "next lint"
