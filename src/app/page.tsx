@@ -14,13 +14,16 @@ export default function Home() {
     apolloClient
       .query({
         query: gql(`
-          query apiStatus {
-            status {
-              generalStatus {
+          query demo {
+            country(code: "BR") {
+              name
+              native
+              capital
+              emoji
+              currency
+              languages {
+                code
                 name
-                status
-                statusCode
-                message
               }
             }
           }

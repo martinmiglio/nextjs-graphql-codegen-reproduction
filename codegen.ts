@@ -1,7 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "https://api.tarkov.dev/graphql",
+  schema: "https://countries.trevorblades.com/graphql",
   documents: ["src/**/*.tsx"],
   generates: {
     "./src/__generated__/": {

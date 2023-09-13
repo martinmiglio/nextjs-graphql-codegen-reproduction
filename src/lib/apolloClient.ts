@@ -13,7 +13,7 @@ import isEqual from "lodash/isEqual";
 let apolloClient: ApolloClient<NormalizedCacheObject>;
 
 const httpLink = new HttpLink({
-  uri: "https://api.tarkov.dev/graphql",
+  uri: "https://countries.trevorblades.com/graphql",
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
