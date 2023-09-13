@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"graphql-codegen -w\" \"next dev\"",
-    "build": "graphql-codegen && next build",
+    "build": "graphql-codegen --debug -v && next build",
     "start": "next start",
     "compile": "graphql-codegen",
     "lint": "next lint"
